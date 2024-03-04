@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Across the Atlas</title>
+  
+  <!-- bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!-- fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  
+  <!-- icone bootstrap  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- .css  -->
+  <link rel="stylesheet" href="acrosstheatlas.css">
+</head>
+<body>
+  
+  <!-- inizio navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg1 p-2" aria-label="Eighth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="logo" src="./ACROSS_THE_ATLAS-removebg-preview.png" alt=""></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list-nested fs-1 txt3"></i>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link txt3 font-js" href="#">Chi siamo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt3 font-js" href="#">Eventi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt3 font-js" href="#">Mete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt3 font-js" href="#">Sconti-Gift Cards</a>
+          </li>
+          
+          
+        </ul>
+        <form class="mb-2 mb-md-0" role="search">
+          <input class="form-control" type="search"  placeholder= "Cerca qui" aria-label="Search"> 
+        </form>
+        <button class="btn ms-md-3 mb-3 mb-md-0 button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="bi bi-person-fill"> Accedi</i></button>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Offcanvas  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="./ACROSS_THE_ATLAS-removebg-preview.png" alt="logo"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link txt3 font-js" href="#">Chi siamo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt3 font-js" href="#">Eventi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt3 font-js" href="#">Mete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt3 font-js" href="#">Sconti-Gift</a>
+          </li>
+        </div>
+      </div>
+      
+      
+      <!-- Modale -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg3">
+            <div class="modal-body text-white">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <p class="font-js">ACCEDI</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label font-exo">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label mb-3 font-exo">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label font-exo" for="exampleCheck1">Salva password</label>
+                      </div>
+                      <button type="submit" class="bg2 d-block mx-auto text-white border-0 py-2 px-4 rounded-2">INVIA</button>
+                    </form> 
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero  -->
+    <header class="position-relative">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Progetto senza titolo (15).png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h1 class="h1-carousel">Giappone - Tokyo</h1>
+              <h3 class="font-exo h3-carousel">14 giorni - in partenza 15/03</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Londra.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h1 class="h1-carousel">Inghilterra - Londra</h1>
+              <h3 class="font-exo h3-carousel">7 giorni - in partenza 20/03</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Progetto senza titolo (14).png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h1 class="h1-carousel">USA - New York</h1>
+              <h3 class="font-exo h3-carousel">14 giorni - 25/03</h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    
+    <!-- Sezione "prossimi viaggi"  -->
+    
+    <div class="container my-5 py-5">
+      <div class="row mb-3">
+        <div class="col-12 text-center my-3">
+          <h2 class="font-exo txt3">VIAGGI DI GRUPPO AI CONFINI DELLA TERRA</h2>
+        </div>
+      </div>
+      <div class="row mb-3"> 
+        
+        <div class="col-12 col-md-3 mt-4">
+          <div class="card d-block mx-auto border border-0 bgcard" style="width: 18rem;">
+            <img src="./Progetto_senza_titolo__9_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title txt1 text-center">Scegli</h2>
+              <h4 class="font-exo txt1 text-center">filtra per Paese, periodo, budget, tema.</h4>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-3 mt-4">
+          <div class="card d-block mx-auto border border-0 bgcard" style="width: 18rem;">
+            <img src="./Progetto_senza_titolo__8_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title txt1 text-center">Prenota</h2>
+              <h4 class="font-exo txt1 text-center">il viaggio sul sito</h4>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-12 col-md-3 mt-4">
+          <div class="card d-block mx-auto border border-0 bgcard" style="width: 18rem;">
+            <img src="./Progetto_senza_titolo__6_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title txt1 text-center">Fai amicizia</h2>
+              <h4 class="font-exo txt1 text-center"> con i compagni di viaggio</h4>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-12 col-md-3 mt-4">
+          <div class="card d-block mx-auto border border-0 bgcard" style="width: 18rem;">
+            <img src="./Progetto_senza_titolo__7_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title txt1 text-center">Prepara lo zaino</h2>
+              <h4 class="font-exo txt1 text-center">ricordati i documenti e goditi il viaggio</h4>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pacchetti viaaggio  -->
+      <div class="container my-4 py-4">
+        <div class="row mb-3">
+          <div class="col-12 text-center my-3">
+            <h2 class="font-exo txt3">PROSSIMI VIAGGI APRILE - MAGGIO 2024</h2>
+          </div>
+        </div>
+        
+        <div class="container my-2 py-2">
+          <div class="row align-item-center">
+            <div class="col-12 col-md-6 mt-2">
+              <h2 class="design-underline">Corea del sud</h2>
+              <h4>12 giorni - in partenza 12/04</h4>
+              <h4 >Età: 18+</h4>
+              <p class="font-exo">Un viaggio per scoprire la Corea del Sud, una terra sospesa tra tradizione e hi tech futuristico, dalla metropoli di Seoul agli incredibili templi di Gyeongju. E' arrivato il momento di scoprire questo Paese incredibile.</p>
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+              <div class="card d-block mx-auto border border-0 bg3" style="width: 18rem;">
+                <img src="./Progetto senza titolo (1).png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title txt1 text-center">Seoul</h5>
+                  <a href="#" class="btn bg2 txt1 btn1 font-exo">2.990 €</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row align-item-center">
+            <div class="col-12 col-md-6 mt-5 py-3 order-md-last">
+              <h2 class="design-underline">Egitto</h2>
+              <h4>11 giorni - in partenza 24/04</h4>
+              <h4 >Età: 18+</h4>
+              <p class="font-exo">Un viaggio di gruppo in Egitto, dalle Piramidi del Cairo al deserto di El Fayoum, passando per il Nilo e il Mar Rosso.</p>
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+              <div class="card d-block mx-auto border border-0 bg3" style="width: 18rem;">
+                <img src="./egitto.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title txt1 text-center">Cairo</h5>
+                  <a href="#" class="btn bg2 txt1 btn1 font-exo">2.690 €</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row align-item-center">
+          <div class="col-12 col-md-6 mt-5 py-3">
+            <h2 class="design-underline">Islanda</h2>
+            <h4>8 giorni - in partenza 07/05</h4>
+            <h4 >Età: 18+</h4>
+            <p class="font-exo">On the road attraverso i luoghi più remoti e magici del selvaggio sud, tra paesaggi mozzafiato e Aurora Boreale! Inclusa la super escursione nelle Grotte di Ghiaccio!
+            </p>
+          </div>
+          <div class="col-12 col-md-6 mt-2">
+            <div class="card d-block mx-auto border border-0 bg3" style="width: 18rem;">
+              <img src="./Progetto senza titolo (2).png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h1 class="card-title txt1 text-center">Reykjavík</h5>
+                <a href="#" class="btn bg2 txt1 btn1 font-exo">1.790 €</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Prenota -->
+        <div class="container-fluid px-5 my-5">
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <div class="card border-0 shadow overflow-hidden">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-sm-6 d-none d-sm-block bg-image"></div>
+                    <div class="col-sm-6 p-4">
+                      <div class="text-center">
+                        <div class="h3 fw-light">Iscriviti alla newsletter</div>
+                        <p class="mb-4 text-muted">Nuove destinazioni, consigli di viaggio ed offerte speciali</p>
+                      </div>
+                      
+                      <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        
+                        <!-- Name Input -->
+                        <div class="form-floating mb-3 font-exo">
+                          <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                          <label for="name">Name</label>
+                          <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                        </div>
+                        
+                        <!-- Email Input -->
+                        <div class="form-floating mb-3 font-exo">
+                          <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                          <label for="emailAddress">Email</label>
+                          <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                          <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                        </div>
+                        
+                        <!-- Message Input -->
+                        <div class="form-floating mb-3 font-exo">
+                          <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                          <label for="message">Message</label>
+                          <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                        </div>
+                        
+                        <!-- Submit success message -->
+                        <div class="d-none" id="submitSuccessMessage">
+                          <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            <p>To activate this form, sign up at</p>
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                          </div>
+                        </div>
+                        
+                        <!-- Submit error message -->
+                        <div class="d-none" id="submitErrorMessage">
+                          <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        
+                        <!-- Submit button -->
+                        <div class="d-grid">
+                          <button class="bg2 disabled font-exo border-0 py-3 txt1" id="submitButton" type="submit">INVIA</button>
+                        </div>
+                      </form>
+                      <!-- End of contact form -->
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer  -->
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <img src="./ACROSS_THE_ATLAS-removebg-preview.png " alt="">
+            </a>
+            <p class="txt3 font-exo">AcrosstheAtlas © 2024</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5 class="txt2 font-js">Quando vuoi partire</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-exo">Viaggi di gruppo Marzo</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-exo">Viaggi di gruppo Aprile</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-exo">Viaggi di gruppo Maggio</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-exo">Viaggi di gruppo Giugno</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5 class="txt2 font-js">Info utili</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-exo">Faq</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-exo">Contattaci</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-exo">Termini e condizioni</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-exo">Condizioni assicurative</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-exo">Privacy Policy</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3 ">
+            <h5 class="txt2 font-js">Seguici</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 social"><img src="./icons8-instagram-48.png" alt=""></li>
+              <li class="nav-item mb-2 social"><img src="./icons8-facebook-nuovo-48.png" alt=""></li>
+              <li class="nav-item mb-2 social"><img src="./icons8-riproduci-youtube-48.png" alt=""></li>
+            </ul>
+          </div>
+        </footer>
+      </body>
+      </html>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
